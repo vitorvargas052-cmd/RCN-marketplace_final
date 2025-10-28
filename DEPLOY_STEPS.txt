@@ -1,0 +1,20 @@
+DEPLOY: GitHub -> Vercel (recommended)
+
+1) Create a GitHub repo and push the contents of this project to the repo root.
+2) In Vercel, New Project -> Import Git Repository -> select repo.
+   - Framework: Next.js
+   - Build Command: npm run build
+3) Set Environment Variables in Vercel (Project Settings -> Environment Variables):
+   - DATABASE_URL = (Neon Postgres connection string)
+   - OPENAI_API_KEY = (OpenAI key)
+   - STRIPE_SECRET_KEY = (Stripe secret key)
+   - SUPABASE_URL = (Supabase project URL)
+   - SUPABASE_ANON_KEY = (Supabase anon/public key)
+   - SUPPORT_EMAIL = rcnsuporte048@gmail.com
+   - NEXT_PUBLIC_SUPABASE_URL = (same as SUPABASE_URL)
+   - NEXT_PUBLIC_SUPABASE_ANON_KEY = (same as SUPABASE_ANON_KEY)
+4) Deploy. After first deploy, run migrations locally if needed: npx prisma migrate dev --name init
+5) Test site, create user, create product, test chat, favorites, notifications.
+
+Security notes:
+- Do NOT commit secret keys. Use Vercel ENV vars.

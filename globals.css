@@ -1,0 +1,8 @@
+@tailwind base; @tailwind components; @tailwind utilities;
+:root{--rcn-900:#001f3f;--rcn-800:#07203a;--rcn-300:#4db1ff}
+html,body,#__next{height:100%}
+body{background:var(--rcn-900);color:#e6eef6}
+.card-rcn{background:rgba(0,0,0,0.35);backdrop-filter:blur(6px);border-radius:12px;padding:16px;border:1px solid rgba(255,255,255,0.03)}
+.pulse{animation:pulse 3s infinite}
+@keyframes pulse{0%{transform:scale(1);box-shadow:0 0 0 rgba(77,177,255,0.15)}50%{transform:scale(1.02);box-shadow:0 10px 30px rgba(77,177,255,0.12)}100%{transform:scale(1);box-shadow:0 0 0 rgba(77,177,255,0)} }
+nav button{filter:drop-shadow(0 6px 12px rgba(0,0,0,0.5));}
