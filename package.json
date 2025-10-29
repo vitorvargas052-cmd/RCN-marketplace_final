@@ -1,0 +1,31 @@
+{
+  "name": "rcn-marketplace",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev -p 3000",
+    "build": "next build",
+    "start": "next start -p 3000"
+  },
+  "dependencies": {
+    "next": "15.0.0",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "tailwindcss": "^3.4.13",
+    "postcss": "^8.4.35",
+    "autoprefixer": "^10.4.19",
+    "axios": "^1.7.2",
+    "@supabase/supabase-js": "^2.45.0",
+    "stripe": "^15.0.0",
+    "@stripe/stripe-js": "^4.7.0",
+    "framer-motion": "^11.3.9",
+    "chart.js": "^4.4.3",
+    "lucide-react": "^0.358.0",
+    "uuid": "^9.0.1"
+  },
+  "devDependencies": {
+    "eslint": "8.57.0",
+    "eslint-config-next": "15.0.0",
+    "typescript": "^5.5.4"
+  }
+}
