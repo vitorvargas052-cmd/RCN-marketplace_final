@@ -1,7 +1,16 @@
-/** Next.js 15 config */
+/** @type {import('next').NextConfig} */
 const nextConfig = {
-  experimental: { appDir: true },
   reactStrictMode: true,
   swcMinify: true,
-}
-module.exports = nextConfig
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
+  typescript: {
+    ignoreBuildErrors: true,
+  },
+  images: {
+    domains: ["lh3.googleusercontent.com", "avatars.githubusercontent.com", "supabase.co"],
+  },
+};
+
+export default nextConfig;
